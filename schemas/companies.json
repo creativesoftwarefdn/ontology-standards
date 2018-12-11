@@ -1,0 +1,36 @@
+{
+    "@context": "schemas.creativesoftwarefdn.org/weaviate/",
+    "version": "0.0.1",
+    "type": "thing",
+    "name": "Weaviate - Companies",
+    "maintainer": "hello@creativesoftwarefdn.org",
+    "classes": 
+    [
+
+        {
+            "class": "Company",
+            "description": "Company",
+            "keywords": [
+                {
+                  "keyword": "business",
+                  "weight": 1.0
+                }
+            ],
+            "properties": 
+            [
+                {
+                   "@dataType": ["string"],
+                    "name": "name",
+                    "description": "Name of the company",
+                    "keywords": [
+                        {
+                          "keyword": "identifier",
+                          "weight": 1.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
